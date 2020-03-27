@@ -1,0 +1,37 @@
+body {
+	background: #35C1FF;
+	color: #111111  !important;
+    background: #ffffff url('../bg_login.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-wrapper {
+    margin-top: 7%;
+    padding-bottom: 100px;
+}
+
+.login-box {
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background: #fefefe;
+	background-repeat: no-repeat;
+	background-position: left;
+	box-shadow: 0px 0px 10px #777777;
+    opacity: 0.9;
+}
+
+@media(max-width: 720px) {
+	body {
+		padding: 10px;
+	}
+	.login-box {
+		width: 100%;
+	}
+}
+
+.login-body {
+	padding: 40px;
+}
