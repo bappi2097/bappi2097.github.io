@@ -54,7 +54,7 @@ class HomeController extends Controller
     protected function wdataM()
     {
         try {
-            $url = "https://corona.pixonlab.com/api/data?date=2020-03-27";
+            $url = "https://corona.pixonlab.com/api/data?date=" . date('Y-m-d');
             $datainjson = file_get_contents($url);
             $data = json_decode($datainjson, true)['statistics'];
             $wdata['cases'] = $this->etobnoS($data['total_case']);
@@ -169,9 +169,9 @@ class HomeController extends Controller
     }
     public function tutorialFull($id)
     {
-        $tutorial = Tutorial::where('id', $id)->first();
-        if (empty($tutorial))
+        if (!Tutorial::where('id', $id)->exists())
             return response()->view('error');
+        $tutorial = Tutorial::where('id', $id)->first();
         return view('tutorial_full', compact('tutorial'));
     }
 }
