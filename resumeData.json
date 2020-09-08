@@ -31,6 +31,11 @@
         "name": "github",
         "url": "http://github.com/bappi2097",
         "className": "fa fa-github"
+      },
+      {
+        "name": "stackoverflow",
+        "url": "https://stackoverflow.com/users/12789602/bappi-saha",
+        "className": "fa fa-stack-overflow"
       }
     ]
   },
@@ -76,6 +81,14 @@
       {
         "name": "MySQL",
         "level": "80%"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "level": "85%"
+      },
+      {
+        "name": "Bulma",
+        "level": "100%"
       }
     ]
   },
@@ -95,9 +108,15 @@
       },
       {
         "title": "CoronaBD Clone",
-        "category": "CoronaBD Clone built with Bulma Css Framework",
+        "category": "CoronaBD Clone built with Bulma CSS Framework",
         "image": "coronabd-2.png",
         "url": "https://coronabd35.herokuapp.com"
+      },
+      {
+        "title": "ExchangerBD Clone",
+        "category": "ExchangerBD Clone built with Laravel, Jquery, MySQL, CSS, HTML",
+        "image": "exchangerbd.png",
+        "url": "https://xchanger.herokuapp.com/"
       }
     ]
   }
