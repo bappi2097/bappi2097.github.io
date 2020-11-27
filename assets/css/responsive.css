@@ -9,8 +9,13 @@
 }
 
 .shadow-1 {
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.-height {
+  height: 360px;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -82,11 +87,16 @@
     margin-top: 0px;
     padding: 0;
     background-color: #0bceaf;
-    transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(-100%) translateY(0) translateZ(0)
+      rotate(0deg) scale(1);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
@@ -95,10 +105,14 @@
   }
   .mh-xs-mobile-nav .navbar-collapse.active {
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .collapse {
     display: block;
@@ -115,11 +129,16 @@
     left: 0;
   }
   .mh-xs-mobile-nav .navbar-toggler .icon {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -o-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0)
+      rotate(0deg) scale(1);
   }
   .mh-xs-mobile-nav .navbar-toggler .icon,
   .mh-xs-mobile-nav .navbar-toggler .icon::after,
@@ -133,7 +152,7 @@
   }
   .mh-xs-mobile-nav .navbar-toggler .icon::after,
   .mh-xs-mobile-nav .navbar-toggler .icon::before {
-    content: '';
+    content: "";
     top: 0;
     right: 0;
     -webkit-transition: all 0.6s ease-out;
@@ -143,31 +162,49 @@
   }
   .mh-xs-mobile-nav .navbar-toggler .icon::after {
     transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(6px) translateZ(0) rotate(0deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .navbar-toggler .icon::before {
-    transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -o-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(-6px) translateZ(0) rotate(0deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .navbar-toggler.active .icon::after {
     transform: translateX(0) translateY(0) translateZ(0) rotate(138deg) scale(1);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg) scale(1);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg) scale(1);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg) scale(1);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(138deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .navbar-toggler.active .icon::before {
-    transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg) scale(1);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg) scale(1);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg) scale(1);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg) scale(1);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg) scale(1);
+    transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg)
+      scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(-135deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .navbar-toggler.active .icon::after,
   .mh-xs-mobile-nav .navbar-toggler.active .icon::before {
@@ -230,11 +267,16 @@
     margin-top: 0px;
     padding: 0;
     background-color: #0bceaf;
-    transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(-100%) translateY(0) translateZ(0)
+      rotate(0deg) scale(1);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     -webkit-font-smoothing: antialiased;
@@ -257,7 +299,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-transform: translate3d(-20px, -10px, 0);
-            transform: translate3d(-20px, -10px, 0);
+    transform: translate3d(-20px, -10px, 0);
   }
   .mh-xs-mobile-nav .navbar-collapse .nav li a {
     background-color: transparent;
@@ -277,10 +319,14 @@
   }
   .mh-xs-mobile-nav .navbar-collapse.active {
     transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
-    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg)
+      scale(1);
   }
   .mh-xs-mobile-nav .collapse.in {
     background-color: rgba(0, 0, 0, 0.9);
@@ -444,8 +490,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .mh-header {
     padding: 0;
@@ -571,6 +617,9 @@
   }
   .home-padding {
     padding: 60px 0;
+  }
+  .-height {
+    height: 240px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
