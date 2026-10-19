@@ -1,1985 +1,462 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Bappi Saha | Portfolio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Maha Personal cv/resume template for professional and personal website."
-    />
-    <meta
-      name="keywords"
-      content="creative, cv, designer,  online cv, online resume, powerful portfolio, professional, professional resume, responsive, resume, vcard "
-    />
-    <meta name="developer" content="Md. Siful Islam" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bappi Saha · Senior Software Engineer</title>
+<meta name="description" content="Bappi Saha, Senior Software Engineer. Backend systems in Go, PostgreSQL and Redis, microservices and event-driven architecture.">
+<meta name="theme-color" content="#0d1117">
+<meta property="og:title" content="Bappi Saha · Senior Software Engineer">
+<meta property="og:description" content="Backend systems in Go, PostgreSQL and Redis. Microservices, APIs and event-driven architecture.">
+<meta property="og:url" content="https://bappi2097.github.io/">
+<meta property="og:type" content="profile">
+<link rel="canonical" href="https://bappi2097.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%2339d353'%3E%3E_%3C/text%3E%3C/svg%3E">
+<script>
+  // Set the theme before paint, so the page does not flash.
+  document.documentElement.className = "js";
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<style>
+:root{--mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--r:10px}
+[data-theme=dark]{--bg:#0d1117;--bg2:#161b22;--line:#30363d;--fg:#e6edf3;--mute:#8b949e;--acc:#39d353;--acc2:#58a6ff;--kw:#ff7b72;--str:#a5d6ff;--fn:#d2a8ff;--glow:rgba(57,211,83,.12)}
+[data-theme=light]{--bg:#ffffff;--bg2:#f6f8fa;--line:#d0d7de;--fg:#1f2328;--mute:#59636e;--acc:#1a7f37;--acc2:#0969da;--kw:#cf222e;--str:#0a3069;--fn:#8250df;--glow:rgba(26,127,55,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(600px circle at var(--mx,50%) var(--my,0%),var(--glow),transparent 60%);z-index:0}
+a{color:var(--acc2);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:9;background:var(--bg2);padding:6px 10px}
 
-    <!-- FAV AND ICONS   -->
-    <link rel="shortcut icon" href="assets/images/profile.svg" />
-    <link rel="shortcut icon" href="assets/images/apple-icon.png" />
-    <link rel="shortcut icon" sizes="72x72" href="assets/images/favicon.ico" />
-    <!-- Google Font-->
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="assets/icons/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css" />
-    <!-- Animate CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/animate.css" />
-    <!-- Owl Carousel CSS-->
-    <link rel="stylesheet" href="assets/plugins/css/owl.css" />
-    <!-- Fancybox-->
-    <link rel="stylesheet" href="assets/plugins/css/jquery.fancybox.min.css" />
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
+/* nav */
+nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(8px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:56px;font-family:var(--mono);font-size:14px}
+.logo{color:var(--fg);font-weight:700}.logo b{color:var(--acc)}
+nav ul{display:flex;gap:16px;list-style:none;margin:0 0 0 auto;padding:0}
+nav ul a{color:var(--mute)}nav ul a:hover,nav ul a.on{color:var(--fg);text-decoration:none}
+.btn-i{background:none;border:1px solid var(--line);color:var(--fg);border-radius:8px;width:34px;height:34px;cursor:pointer;font:16px var(--mono)}
+.btn-i:hover{border-color:var(--acc)}
 
-    <!-- Colors -->
-    <!-- <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/blue.css"
-      title="blue"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/colors/defauld.css"
-      title="defauld"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/green.css"
-      title="green"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/blue-munsell.css"
-      title="blue-munsell"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/orange.css"
-      title="orange"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/purple.css"
-      title="purple"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/slate.css"
-      title="slate"
-    />
-    <link
-      rel="alternate stylesheet"
-      href="assets/css/colors/yellow.css"
-      title="yellow"
-    /> -->
-    <script src="https://use.fontawesome.com/8a1846b996.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-Y9WPJHBJ13"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+/* hero */
+header{padding:72px 0 40px}
+.hello{font-family:var(--mono);color:var(--acc);font-size:15px;margin:0 0 8px}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}
+.role{font-family:var(--mono);font-size:clamp(16px,2.4vw,20px);color:var(--mute);margin:0 0 18px;min-height:1.6em}
+.role .typed{color:var(--fg)}
+.caret{display:inline-block;width:.6em;height:1.1em;vertical-align:-.15em;background:var(--acc);animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{max-width:640px;color:var(--mute);margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:14px var(--mono);padding:10px 16px;border-radius:8px;border:1px solid var(--line);color:var(--fg);background:var(--bg2)}
+.btn:hover{border-color:var(--acc);text-decoration:none}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#0d1117;font-weight:700}
+.meta{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:22px;font:13px var(--mono);color:var(--mute)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:6px;box-shadow:0 0 0 0 var(--acc);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
 
-      gtag("config", "G-Y9WPJHBJ13");
-    </script>
-  </head>
-  <body class="white-vertion black-bg">
-    <!-- Start Loader -->
-    <div class="section-loader">
-      <div class="loader">
-        <div></div>
-        <div></div>
+/* terminal */
+.term{margin:36px 0 0;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);overflow:hidden;font:14px/1.6 var(--mono);box-shadow:0 20px 50px -30px rgba(0,0,0,.6)}
+.bar{display:flex;align-items:center;gap:7px;padding:10px 14px;border-bottom:1px solid var(--line);color:var(--mute);font-size:12px}
+.bar i{width:12px;height:12px;border-radius:50%;background:#ff5f56}.bar i:nth-child(2){background:#ffbd2e}.bar i:nth-child(3){background:#27c93f}
+.bar span{margin-left:auto}
+#out{padding:14px 16px 0;height:260px;overflow-y:auto;white-space:pre-wrap;word-break:break-word}
+#out .p,.in label{color:var(--acc)}
+#out .k{color:var(--kw)}#out .s{color:var(--str)}#out .f{color:var(--fn)}#out .m{color:var(--mute)}
+.in{display:flex;gap:8px;padding:6px 16px 14px}
+.in input{flex:1;background:none;border:0;outline:0;color:var(--fg);font:inherit;caret-color:var(--acc)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}
+.chips button{font:12px var(--mono);background:none;border:1px solid var(--line);color:var(--mute);border-radius:20px;padding:3px 10px;cursor:pointer}
+.chips button:hover{color:var(--fg);border-color:var(--acc)}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:600 14px var(--mono);color:var(--acc);text-transform:lowercase;margin:0 0 6px}
+h2::before{content:"// "}
+h3.t{font-size:clamp(24px,3.5vw,32px);margin:0 0 24px;letter-spacing:-.01em}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:var(--bg2);transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h4{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:var(--mute);font-size:14.5px}
+
+/* code block about */
+pre.code{margin:0;padding:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg2);font:14px/1.7 var(--mono);overflow-x:auto}
+.code .k{color:var(--kw)}.code .s{color:var(--str)}.code .f{color:var(--fn)}.code .c{color:var(--mute)}.code .n{color:var(--acc2)}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 30px 26px}
+.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--acc)}
+.tl li.now::before{background:var(--acc)}
+.tl .when{font:13px var(--mono);color:var(--mute)}
+.tl h4{margin:2px 0 2px;font-size:18px}
+.tl .co{color:var(--acc2);font-weight:600}
+.tl ul{margin:8px 0 0;padding-left:18px;color:var(--mute);font-size:15px}
+.tl ul li{padding:0 0 4px;border:0}.tl ul li::before{display:none}
+
+/* skills */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.filters button{font:13px var(--mono);background:var(--bg2);border:1px solid var(--line);color:var(--mute);padding:6px 12px;border-radius:8px;cursor:pointer}
+.filters button[aria-pressed=true]{color:var(--bg);background:var(--acc);border-color:var(--acc)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{font:14px var(--mono);border:1px solid var(--line);background:var(--bg2);padding:6px 12px;border-radius:8px;transition:opacity .2s,transform .2s}
+.tags li.off{opacity:.18;transform:scale(.96)}
+.tags li.hot{border-color:var(--acc)}
+
+.two{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.two>*,.grid>*{min-width:0}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:10px 0;border-bottom:1px dashed var(--line)}
+.list li span{display:block;font:13px var(--mono);color:var(--mute)}
+
+.contact a.big{font:clamp(18px,3vw,26px) var(--mono);color:var(--fg)}
+.contact a.big:hover{color:var(--acc)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);font:13px var(--mono);color:var(--mute)}
+
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.js .rv.in-view{opacity:1;transform:none}
+@media (max-width:640px){nav ul{display:none}#theme{margin-left:auto}.bar span{display:none}header{padding-top:44px}#out{height:220px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>&gt;_</b> bappi</a>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#credentials">credentials</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="btn-i" id="theme" type="button" aria-label="Switch light or dark theme">◐</button>
+  </div>
+</nav>
+
+<main id="main">
+<header id="top">
+  <div class="wrap">
+    <p class="hello">$ whoami</p>
+    <h1>Bappi Saha</h1>
+    <p class="role" aria-label="Senior Software Engineer. Backend, Go, distributed systems."><span class="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span></p>
+    <p class="lead">Senior Software Engineer with 5+ years of building web apps, backend services and APIs.
+      I design backend systems that are scalable, reliable and ready for production: not only making features work, but making them dependable.</p>
+    <div class="cta">
+      <a class="btn pri" href="#contact">Get in touch</a>
+      <a class="btn" href="https://github.com/bappi2097" rel="me">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/bappi-saha/" rel="me">LinkedIn</a>
+    </div>
+    <div class="meta">
+      <span><span class="dot"></span>Senior Software Engineer @ Masharah Advisory</span>
+      <span>📍 Jeddah, Saudi Arabia · remote</span>
+    </div>
+
+    <div class="term" id="terminal">
+      <div class="bar"><i></i><i></i><i></i><span>bappi@portfolio: ~</span></div>
+      <div id="out" role="log" aria-live="polite"></div>
+      <form class="in" id="form" autocomplete="off">
+        <label for="cmd">❯</label>
+        <input id="cmd" name="cmd" spellcheck="false" autocapitalize="off" aria-label="Terminal command. Type help." placeholder="type 'help' and press Enter">
+      </form>
+      <div class="chips" aria-label="Quick commands">
+        <button type="button" data-c="about">about</button>
+        <button type="button" data-c="experience">experience</button>
+        <button type="button" data-c="skills">skills</button>
+        <button type="button" data-c="contact">contact</button>
+        <button type="button" data-c="clear">clear</button>
       </div>
     </div>
-    <!-- End Loader -->
+  </div>
+</header>
 
-    <!--
-        ===================
-           NAVIGATION
-        ===================
-        -->
-    <header
-      class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp"
-      id="mh-header"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg mh-nav nav-btn">
-            <a class="navbar-brand" href="#">
-              <img
-                src="assets/images/coding-geek.png"
-                alt=""
-                class="img-fluid"
-                style="width: 75px; height: 37px"
-              />
-              <!-- <h2>Bappi</h2> -->
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon icon"></span>
-            </button>
+<section id="about">
+  <div class="wrap rv">
+    <h2>about</h2>
+    <h3 class="t">I build backends that keep working.</h3>
+    <div class="two">
+      <pre class="code" aria-label="About me as Go code"><span class="k">type</span> <span class="n">Engineer</span> <span class="k">struct</span> {
+  Name     <span class="n">string</span>
+  Role     <span class="n">string</span>
+  Focus    []<span class="n">string</span>
+}
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-0 ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#mh-home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-experience">Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-portfolio">Project</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-testimonial">Certificate</a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#mh-blog">Blog</a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#mh-contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+<span class="k">var</span> me = <span class="n">Engineer</span>{
+  Name: <span class="s">"Bappi Saha"</span>,
+  Role: <span class="s">"Senior Software Engineer"</span>,
+  Focus: []<span class="n">string</span>{
+    <span class="s">"backend &amp; API design"</span>,
+    <span class="s">"microservices &amp; events"</span>,
+    <span class="s">"databases &amp; caching"</span>,
+    <span class="s">"reliability"</span>,
+  },
+}
+
+<span class="c">// clean architecture, careful decisions,</span>
+<span class="c">// problems solved at the system level.</span></pre>
+      <div class="grid" style="grid-template-columns:1fr">
+        <div class="card"><h4>Backend &amp; API design</h4><p>REST APIs in Go (Gin), NestJS and Laravel. Auth, role-based access and secure integrations.</p></div>
+        <div class="card"><h4>Microservices &amp; events</h4><p>Modular services behind a gateway. Event-driven work with queues such as RabbitMQ.</p></div>
+        <div class="card"><h4>Data &amp; performance</h4><p>Schema design, query tuning and caching with PostgreSQL and Redis.</p></div>
+        <div class="card"><h4>Production reliability</h4><p>High availability, fault tolerance, monitoring, CI/CD and calm debugging.</p></div>
       </div>
-    </header>
+    </div>
+  </div>
+</section>
 
-    <!--
-        ===================
-            HOME 
-        ===================
-        -->
-    <section class="mh-home" id="mh-home">
-      <div class="home-ovimg">
-        <div class="container">
-          <div
-            class="row xs-column-reverse section-separator vertical-middle-content home-padding"
-          >
-            <div class="col-sm-6">
-              <div class="mh-header-info">
-                <div
-                  class="mh-promo wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.1s"
-                >
-                  <span>Hello I'm</span>
-                </div>
+<section id="experience">
+  <div class="wrap rv">
+    <h2>experience</h2>
+    <h3 class="t">Where I have worked</h3>
+    <ol class="tl">
+      <li class="now">
+        <div class="when">Nov 2025 – present · Jeddah, Saudi Arabia (remote)</div>
+        <h4>Senior Software Engineer · <span class="co">Masharah Advisory</span></h4>
+        <ul>
+          <li>Design and build scalable backend services and web apps.</li>
+          <li>Build a book annotation and digital content platform: structured book data and user annotations.</li>
+          <li>Database schemas and query tuning; authentication, authorization and role-based access.</li>
+          <li>System architecture, technical planning, code reviews, deploys and production support.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">Jun 2024 – Nov 2025 · Dhaka</div>
+        <h4>Senior Software Engineer · <span class="co">BJIT</span></h4>
+        <ul><li>Promoted after three years. Full stack and backend work for client projects.</li></ul>
+      </li>
+      <li>
+        <div class="when">Aug 2021 – Jun 2024 · Dhaka</div>
+        <h4>Software Engineer · <span class="co">BJIT</span></h4>
+        <ul>
+          <li>Built software with Laravel, Node.js, TypeScript, React and REST APIs.</li>
+          <li>Ran projects on Google Cloud Platform for performance and scale.</li>
+          <li>Improved existing programs for speed and user experience.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="when">May 2021 – Jul 2021 · Dhaka</div>
+        <h4>Software Engineer · <span class="co">The Tork</span></h4>
+        <ul><li>Laravel, PHP, Vue.js and REST APIs. Turned user needs into system specs.</li></ul>
+      </li>
+      <li>
+        <div class="when">Nov 2019 – Mar 2020 · Dhaka</div>
+        <h4>Web Development Intern · <span class="co">LuminousLabs</span></h4>
+        <ul><li>Learned the full web development life cycle on Laravel projects.</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
 
-                <h2
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.2s"
-                >
-                  Bappi Saha
-                </h2>
-                <h4
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.3s"
-                >
-                  Full Stack Web Developer
-                </h4>
+<section id="skills">
+  <div class="wrap rv">
+    <h2>skills</h2>
+    <h3 class="t">Tools I use</h3>
+    <div class="filters" role="group" aria-label="Filter skills">
+      <button type="button" data-f="all" aria-pressed="true">all</button>
+      <button type="button" data-f="be" aria-pressed="false">backend</button>
+      <button type="button" data-f="fe" aria-pressed="false">frontend</button>
+      <button type="button" data-f="db" aria-pressed="false">data</button>
+      <button type="button" data-f="ops" aria-pressed="false">devops</button>
+    </div>
+    <ul class="tags" id="tags">
+      <li data-g="be" class="hot">Go</li><li data-g="be" class="hot">Gin</li><li data-g="be">Node.js</li><li data-g="be">NestJS</li>
+      <li data-g="be">Laravel</li><li data-g="be">PHP</li><li data-g="be">Python</li><li data-g="be">Odoo</li><li data-g="be">Scrapy</li>
+      <li data-g="be">REST APIs</li><li data-g="be">Microservices</li><li data-g="be">Event-driven</li><li data-g="be">RBAC &amp; auth</li>
+      <li data-g="fe">TypeScript</li><li data-g="fe">JavaScript</li><li data-g="fe">React</li><li data-g="fe">Next.js</li>
+      <li data-g="fe">Redux</li><li data-g="fe">Vue.js</li><li data-g="fe">Tailwind CSS</li>
+      <li data-g="db" class="hot">PostgreSQL</li><li data-g="db" class="hot">Redis</li><li data-g="db">RabbitMQ</li><li data-g="db">MySQL</li>
+      <li data-g="db">MongoDB</li><li data-g="db">Prisma</li><li data-g="db">Supabase</li>
+      <li data-g="ops">Docker</li><li data-g="ops">GitHub Actions</li><li data-g="ops">CI/CD</li><li data-g="ops">Google Cloud</li>
+      <li data-g="ops">Jenkins</li><li data-g="ops">Linux</li><li data-g="ops">Git</li>
+    </ul>
+  </div>
+</section>
 
-                <ul>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.4s"
-                  >
-                    <i class="fa fa-envelope"></i
-                    ><a href="mailto:bappi35-2097@diu.edu.bd"
-                      >bappi35-2097@diu.edu.bd</a
-                    >
-                  </li>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.5s"
-                  >
-                    <i class="fa fa-phone"></i
-                    ><a href="callto:">+88 017 262 57333</a>
-                  </li>
-                  <li
-                    class="wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.6s"
-                  >
-                    <i class="fa fa-map-marker"></i>
-                    <address>33/4, Shyamoli, Dhaka, Bangladesh</address>
-                  </li>
-                </ul>
+<section id="credentials">
+  <div class="wrap rv two">
+    <div>
+      <h2>education</h2>
+      <h3 class="t">Study</h3>
+      <ul class="list">
+        <li>B.Sc. in Software Engineering, Daffodil International University<span>2017 – 2021 · CGPA 4.00 / 4.00</span></li>
+        <li>H.S.C. (Science), Police Lines School &amp; College, Rangpur<span>2013 – 2015 · GPA 5.00 / 5.00</span></li>
+      </ul>
+      <h2 style="margin-top:32px">awards</h2>
+      <ul class="list">
+        <li>Academic Performance Award<span>Summer 2019</span></li>
+        <li>Intra University Idea Contest<span>Spring 2019</span></li>
+        <li>Intra Department Programming Contest<span>Summer 2018 · Fall 2018</span></li>
+        <li>Project Fair (Java)</li>
+      </ul>
+    </div>
+    <div>
+      <h2>certifications</h2>
+      <h3 class="t">Learning</h3>
+      <ul class="list">
+        <li>Professional Scrum Developer I</li>
+        <li>Scrum Team Member Accredited Certification</li>
+        <li>NestJS: The Complete Developer's Guide</li>
+        <li>React: The Complete Guide (Hooks, React Router, Redux)</li>
+        <li>Ethereum and Solidity: The Complete Developer's Guide</li>
+      </ul>
+      <h2 style="margin-top:32px">languages</h2>
+      <ul class="list">
+        <li>Bengali<span>native</span></li>
+        <li>English<span>professional working</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-                <ul
-                  class="social-icon wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.7s"
-                >
-                  <li>
-                    <a href="https://www.facebook.com/bappi.saha.75033/"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/bappi-saha/"
-                      ><i class="fa fa-linkedin"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/bappi2097"
-                      ><i class="fa fa-github"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://stackoverflow.com/users/12789602/bappi-saha"
-                      ><i class="fa fa-stack-overflow"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div
-                class="hero-img wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.6s"
-              >
-                <div class="img-border">
-                  <img
-                    src="assets/images/profile-img.jpg"
-                    alt=""
-                    class="img-fluid -height"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="contact" class="contact">
+  <div class="wrap rv">
+    <h2>contact</h2>
+    <h3 class="t">Let's build something reliable.</h3>
+    <p style="color:var(--mute);max-width:560px">Open to talks about backend work, system design and collaboration.</p>
+    <p><a class="big" href="mailto:bappisaha.swe@gmail.com">bappisaha.swe@gmail.com</a></p>
+    <p><a class="big" href="tel:+8801983298393">+880 1983 298393</a></p>
+    <div class="links">
+      <a class="btn" href="https://github.com/bappi2097" rel="me">github/bappi2097</a>
+      <a class="btn" href="https://www.linkedin.com/in/bappi-saha/" rel="me">linkedin/bappi-saha</a>
+      <button class="btn" type="button" id="copy">copy email</button>
+    </div>
+  </div>
+</section>
+</main>
 
-    <!--
-        ==================
-            ABOUT
-        =================
-        -->
-    <section class="mh-about" id="mh-about">
-      <div class="container">
-        <div class="row section-separator">
-          <div class="col-sm-12 col-md-6">
-            <div
-              class="mh-about-img shadow-2 wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.4s"
-            >
-              <img
-                src="assets/images/ab-img.png"
-                alt=""
-                class="img-fluid"
-                height="350px"
-              />
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="mh-about-inner">
-              <h2
-                class="wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.1s"
-              >
-                About Me
-              </h2>
-              <p
-                class="wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.2s"
-              >
-                Hello, I’m a Bappi, a passonate web-developer based on Dhaka.
-                Dreaming to be a world-class Full Stack Developer and to work
-                with a great team and keeping me updated with the recent
-                technologies. Pas-sionate to make the innovative stuff what can
-                solve the real life problems. Also I am good at
-              </p>
-              <div
-                class="mh-about-tag wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.3s"
-              >
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Vue</span></li>
-                  <li><span>Bootstrap</span></li>
-                  <li><span>Tailwind</span></li>
-                  <li><span>Javascript</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>MySQL</span></li>
-                  <li><span>Git/GitHub</span></li>
-                  <li><span>RestAPI</span></li>
-                  <li><span>C/C++</span></li>
-                  <li><span>C#/Asp.NET</span></li>
-                  <li><span>JAVA/Swing</span></li>
-                </ul>
-              </div>
-              <a
-                href="assets/Bappi_Saha_CV.pdf"
-                class="btn btn-fill wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.4s"
-                >Downlaod CV <i class="fa fa-download"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer><div class="wrap">© <span id="yr">2026</span> Bappi Saha · handwritten HTML, no framework · <a href="#terminal">try the terminal ↑</a></div></footer>
 
-    <!--
-        ===================
-           SERVICE
-        ===================
-        -->
-    <section class="mh-service">
-      <div class="container">
-        <div class="row section-separator">
-          <div
-            class="col-sm-12 text-center section-title wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.2s"
-          >
-            <h2>What I do</h2>
-          </div>
-          <div class="col-sm-4">
-            <div
-              class="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <i class="fa fa-bullseye purple-color"></i>
-              <h3>Web Design</h3>
-              <p>
-                Using different CSS framework, which are Bootstrap, Bulma,
-                Tailwind, I have done several web designs. I also have a strong
-                understanding of responsive web design and Sass.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div
-              class="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-            >
-              <i class="fa fa-code iron-color"></i>
-              <h3>Web Development</h3>
-              <p>
-                I have strong experience with Laravel and Vue.js-based web
-                application creation. I have several project work where I have
-                gaind understanding of Websocket, Webscrapper, Excel.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div
-              class="mh-service-item shadow-1 dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.7s"
-            >
-              <i class="fa fa-object-ungroup sky-color"></i>
-              <h3>Api Development</h3>
-              <p>
-                I use the Laravel framework to work on the creation of APIs. And
-                I have knowledge of using GraphQL (LightHouse) for single
-                endpoint API creation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<script>
+(function () {
+  var d = document, root = d.documentElement;
+  var EMAIL = "bappisaha.swe@gmail.com";
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  d.getElementById("yr").textContent = new Date().getFullYear();
 
-    <!--
-        ===================
-           SKILLS
-        ===================
-        -->
-    <section class="mh-skills" id="mh-skills">
-      <div class="container">
-        <div class="row section-separator">
-          <div class="section-title text-center col-sm-12">
-            <!--<h2>Skills</h2>-->
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="mh-skills-inner">
-              <div
-                class="mh-professional-skill wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.3s"
-              >
-                <h3>Technical Skills</h3>
-                <div class="each-skills">
-                  <div class="candidatos">
-                    <div class="parcial">
-                      <div class="info">
-                        <div class="nome">Javascript</div>
-                        <div class="percentagem-num">86%</div>
-                      </div>
-                      <div class="progressBar">
-                        <div class="percentagem" style="width: 86%"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidatos">
-                    <div class="parcial">
-                      <div class="info">
-                        <div class="nome">PHP</div>
-                        <div class="percentagem-num">75%</div>
-                      </div>
-                      <div class="progressBar">
-                        <div class="percentagem" style="width: 75%"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidatos">
-                    <div class="parcial">
-                      <div class="info">
-                        <div class="nome">Laravel</div>
-                        <div class="percentagem-num">60%</div>
-                      </div>
-                      <div class="progressBar">
-                        <div class="percentagem" style="width: 60%"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidatos">
-                    <div class="parcial">
-                      <div class="info">
-                        <div class="nome">Vue.js</div>
-                        <div class="percentagem-num">40%</div>
-                      </div>
-                      <div class="progressBar">
-                        <div class="percentagem" style="width: 40%"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="candidatos">
-                    <div class="parcial">
-                      <div class="info">
-                        <div class="nome">Java,C#,Python</div>
-                        <div class="percentagem-num">30%</div>
-                      </div>
-                      <div class="progressBar">
-                        <div class="percentagem" style="width: 30%"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div
-              class="mh-professional-skills wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-            >
-              <h3>Soft Skills</h3>
-              <ul class="mh-professional-progress">
-                <li>
-                  <div
-                    class="mh-progress mh-progress-circle"
-                    data-progress="95"
-                  ></div>
-                  <div class="pr-skill-name">Communication</div>
-                </li>
-                <li>
-                  <div
-                    class="mh-progress mh-progress-circle"
-                    data-progress="55"
-                  ></div>
-                  <div class="pr-skill-name">Team Work</div>
-                </li>
-                <li>
-                  <div
-                    class="mh-progress mh-progress-circle"
-                    data-progress="86"
-                  ></div>
-                  <div class="pr-skill-name">Project Management</div>
-                </li>
-                <li>
-                  <div
-                    class="mh-progress mh-progress-circle"
-                    data-progress="60"
-                  ></div>
-                  <div class="pr-skill-name">Problem SOlving</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  // theme
+  d.getElementById("theme").onclick = function () { setTheme(root.dataset.theme === "dark" ? "light" : "dark"); };
+  function setTheme(t) { root.dataset.theme = t; try { localStorage.setItem("theme", t); } catch (e) {} }
 
-    <!--
-        ===================
-           EXPERIENCES
-        ===================
-        -->
-    <section class="mh-experince" id="mh-experience">
-      <div class="bolor-overlay">
-        <div class="container">
-          <div class="row section-separator">
-            <div class="col-sm-12 col-md-6">
-              <div class="mh-education">
-                <h3
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.2s"
-                >
-                  Education
-                </h3>
-                <div class="mh-education-deatils">
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-education-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.3s"
-                  >
-                    <h4>
-                      B.Sc. in Software Engineering
-                      <a href="">Daffodil International University</a>
-                    </h4>
-                    <div class="mh-eduyear">2017-2021</div>
-                    <p>
-                      I started my bachelor in software engineering department
-                      from Daffodil International University. I've already
-                      completed 133 credit out of 139. During this time I've
-                      achieved CGPA 4.00.
-                    </p>
-                  </div>
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-education-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.5s"
-                  >
-                    <h4>
-                      Higher Secondary School Certificate in Science
-                      <a href="">Police Lines School & College, Rangpur</a>
-                    </h4>
-                    <div class="mh-eduyear">2013 - 2015</div>
-                    <p>
-                      I've completed my higher school division from science
-                      group and earned certificate at the middle of year 2015.
-                      I've achieve GPA 5.00 out of 5.00 scale.
-                    </p>
-                  </div>
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-education-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.6s"
-                  >
-                    <h4>
-                      Secondary School Certificate<a href=""
-                        >R.S.M High School</a
-                      >
-                    </h4>
-                    <div class="mh-eduyear">2013</div>
-                    <p>
-                      I've completed my secondary school division from science
-                      group. It was a great news for me that I got an
-                      outstanding result. I've achieve GPA 5.00 out of 5.00
-                      scale.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="mh-work">
-                <h3>Courses</h3>
-                <div class="mh-experience-deatils">
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-work-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.7s"
-                  >
-                    <h4>
-                      Laravel From Scratch From
-                      <a
-                        href="https://laracasts.com/series/laravel-6-from-scratch"
-                        >Laracast</a
-                      >
-                    </h4>
-                    <div class="mh-eduyear">2019-2020</div>
-                    <span>What I have learn :</span>
-                    <ul class="work-responsibility">
-                      <li>
-                        <i class="fa fa-circle"></i>Laravel Basic to
-                        Intermediate
-                      </li>
-                      <li><i class="fa fa-circle"></i>Twitter Clone Project</li>
-                    </ul>
-                  </div>
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-work-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.4s"
-                  >
-                    <h4>
-                      Learn Vue 2: Step By Step
-                      <a
-                        href="https://laracasts.com/series/learn-vue-2-step-by-step"
-                        >Laracast</a
-                      >
-                    </h4>
-                    <div class="mh-eduyear">2020</div>
-                    <span>What I have learn :</span>
-                    <ul class="work-responsibility">
-                      <li>
-                        <i class="fa fa-circle"></i>Vue Basic to Intermediate
-                      </li>
-                      <li><i class="fa fa-circle"></i>Blog Site Project</li>
-                    </ul>
-                  </div>
-                  <!-- Education Institutes-->
-                  <div
-                    class="mh-work-item dark-bg wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.6s"
-                  >
-                    <h4>
-                      WordPress for Beginners From
-                      <a
-                        href="https://www.bohubrihi.com/course-pages/wordpress-website/"
-                        >Bohubrihi</a
-                      >
-                    </h4>
-                    <div class="mh-eduyear">2020</div>
-                    <span>What I have learn :</span>
-                    <ul class="work-responsibility">
-                      <li><i class="fa fa-circle"></i>Wordpress Basic</li>
-                      <li><i class="fa fa-circle"></i>Woocommerce</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  // cursor glow, one update per frame
+  var raf = 0;
+  if (!reduce) addEventListener("pointermove", function (e) {
+    if (raf) return;
+    raf = requestAnimationFrame(function () {
+      root.style.setProperty("--mx", e.clientX + "px"); root.style.setProperty("--my", e.clientY + "px"); raf = 0;
+    });
+  }, { passive: true });
 
-    <!--
-        ===================
-           PORTFOLIO
-        ===================
-        -->
-    <section class="mh-portfolio" id="mh-portfolio">
-      <div class="container">
-        <div class="row section-separator">
-          <div
-            class="section-title col-sm-12 wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.1s"
-          >
-            <h3>Recent Portfolio</h3>
-          </div>
-          <div class="part col-sm-12">
-            <div class="portfolio-nav col-sm-12" id="filter-button">
-              <ul>
-                <li
-                  data-filter="*"
-                  class="current wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.1s"
-                >
-                  <span>All Categories</span>
-                </li>
-                <li
-                  data-filter=".web"
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.2s"
-                >
-                  <span>Laravel Web</span>
-                </li>
-                <li
-                  data-filter=".api"
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.3s"
-                >
-                  <span>Api</span>
-                </li>
-                <li
-                  data-filter=".vue"
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.4s"
-                >
-                  <span>Vue</span>
-                </li>
-                <li
-                  data-filter=".others"
-                  class="wow fadeInUp"
-                  data-wow-duration="0.8s"
-                  data-wow-delay="0.5s"
-                >
-                  <span>Others</span>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="mh-project-gallery col-sm-12 wow fadeInUp"
-              id="project-gallery"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-            >
-              <div class="portfolioContainer row">
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web">
-                  <figure>
-                    <img src="assets/img/coronabd.xyz.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">CoronaBD.xyz</h5>
-                      <span class="sub-title">Laravel WEB</span>
-                      <a data-fancybox data-src="#coronabd"></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 ui mockup">
-                  <figure>
-                    <img
-                      src="assets/img/routine-creation-system.png"
-                      alt="img04"
-                    />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Routine Creation System</h5>
-                      <span class="sub-title">Laravel WEB</span>
-                      <a
-                        href="assets/img/routine-creation-system.png"
-                        data-fancybox
-                        data-src="#routine"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div
-                  class="grid-item col-md-4 col-sm-6 col-xs-12 vue api laravel"
-                >
-                  <figure>
-                    <img src="assets/img/booksql.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">BooksQL</h5>
-                      <span class="sub-title">Laravel API Vue</span>
-                      <a
-                        href="assets/images/portfolio/g3.png"
-                        data-fancybox
-                        data-src="#booksql"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web">
-                  <figure>
-                    <img src="assets/img/student-id.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Student ID Generate</h5>
-                      <span class="sub-title">Laravel Web</span>
-                      <a
-                        href="assets/images/portfolio/g5.png"
-                        data-fancybox
-                        data-src="#student"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web">
-                  <figure>
-                    <img src="assets/img/tweety.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Tweety</h5>
-                      <span class="sub-title">Laravel Web</span>
-                      <a
-                        href="assets/images/portfolio/g4.png"
-                        data-fancybox
-                        data-src="#tweety"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web">
-                  <figure>
-                    <img src="assets/img/teachinghub-bd.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Teaching Hub</h5>
-                      <span class="sub-title">Laravel</span>
-                      <a
-                        href="assets/images/portfolio/g6.png"
-                        data-fancybox
-                        data-src="#teach"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web api vue">
-                  <figure>
-                    <img src="assets/img/websocket.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Websocket</h5>
-                      <span class="sub-title">Laravel, APi, Vue</span>
-                      <a
-                        href="assets/images/portfolio/g8.png"
-                        data-fancybox
-                        data-src="#websocket"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div
-                  class="grid-item col-md-4 col-sm-6 col-xs-12 web api others"
-                >
-                  <figure>
-                    <img src="assets/img/webscrapper-data.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">Corona Web Scrapper</h5>
-                      <span class="sub-title">API Webscrapper</span>
-                      <a
-                        href="assets/images/portfolio/g9.png"
-                        data-fancybox
-                        data-src="#scrapper"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-                <div class="grid-item col-md-4 col-sm-6 col-xs-12 web">
-                  <figure>
-                    <img src="assets/img/exchangerbd.png" alt="img04" />
-                    <figcaption class="fig-caption">
-                      <i class="fa fa-search"></i>
-                      <h5 class="title">ExchangerBD</h5>
-                      <span class="sub-title">Laravel Web</span>
-                      <a
-                        href="assets/images/portfolio/g7.jpg"
-                        data-fancybox
-                        data-src="#exchanger"
-                      ></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <!-- End: .grid .project-gallery -->
-            </div>
-            <!-- End: .grid .project-gallery -->
-          </div>
-          <!-- End: .part -->
-        </div>
-        <!-- End: .row -->
-      </div>
-      <div class="mh-portfolio-modal" id="coronabd">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>CoronaBD.xyz</h2>
-              <p>
-                In this project,my team and me build anweb application to give
-                people current corona information which we build under our
-                teacher supervision. Where we develop and deploy it on live.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Mysql</span></li>
-                  <li><span>Bootstrap</span></li>
-                  <li><span>Javascript</span></li>
-                  <li><span>Third Party API</span></li>
-                </ul>
-              </div>
-              <a href="https://coronabd.xyz/" class="btn btn-fill">Live Demo</a>
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <img
-                  src="assets/img/coronabd-bot.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <p>
-                  This coronabot give some question and by these question answer
-                  it can give suggestion
-                </p>
-                <img
-                  src="assets/img/coronabd-tutorial.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <p>
-                  In this page, we have some tutorial like how to wash hand.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="routine">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Routine Creation System</h2>
-              <p>
-                The aim of this project to solve University Routine Creation
-                problem. Here we import an Course allocation Excel and generate
-                Routine from it. And the generated routine has less error and
-                overlap.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>Tailwind</span></li>
-                  <li><span>Vue.js</span></li>
-                  <li><span>PhpSpreadSheet</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/Laravel23/routine-creation-system"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Home Page</h3>
-                <img
-                  src="assets/img/routine-home.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Form Page</h3>
-                <img
-                  src="assets/img/routine-room.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="booksql">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>BooksQL</h2>
-              <p>
-                In this application, I try to build a site which provide books
-                and user can add, update books where I have used GraphQL and
-                Vue.js. Here I deploy my backend on Heroku and frontend on
-                Netlify.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>MySQL</span></li>
-                  <li><span>Tailwind</span></li>
-                  <li><span>Vue.js</span></li>
-                  <li><span>GraphQL</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://booksql.netlify.app/"
-                class="btn btn-fill"
-                target="_blank"
-                >Live Demo</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Home Page</h3>
-                <img
-                  src="assets/img/booksql-home.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Book Page</h3>
-                <img
-                  src="assets/img/booksql-bbok.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="student">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Student ID Generate</h2>
-              <p>
-                This is an ID card generate app where admin can insert student
-                information by from or excel sheet with image. And can edit,
-                update, delete & print student ID. It will generate a id card
-                pdf for single student or all student.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>MySQL</span></li>
-                  <li><span>Tailwind</span></li>
-                  <li><span>PhpSpreadSheet</span></li>
-                  <li><span>DomPDF</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/bappi2097/student_crud_symbex-it"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Login Page</h3>
-                <img
-                  src="assets/img/student-id-login.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Datatable</h3>
-                <img
-                  src="assets/img/student-id-data.png"
-                  alt=""
-                  class="img-fluid"
-                />
+  // typed role line
+  var roles = ["Senior Software Engineer", "Backend · Go · Gin", "PostgreSQL · Redis · RabbitMQ", "Microservices & event-driven systems"];
+  var typed = d.querySelector(".typed"), ri = 0, ci = 0, del = false;
+  function tick() {
+    var w = roles[ri];
+    typed.textContent = w.slice(0, ci);
+    if (!del && ci === w.length) { del = true; return setTimeout(tick, 1800); }
+    if (del && ci === 0) { del = false; ri = (ri + 1) % roles.length; }
+    ci += del ? -1 : 1;
+    setTimeout(tick, del ? 30 : 65);
+  }
+  if (reduce) typed.textContent = roles[0]; else tick();
 
-                <h3>ID Card</h3>
-                <img
-                  src="assets/img/student-id-card.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="tweety">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Tweety - Twitter Clone</h2>
-              <p>
-                In this project, I tried to clone twitter social media and some
-                functionality of twitter Like User authentication, Post, Follow,
-                Like, Dislike, Prole etc.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>MongoDB</span></li>
-                  <li><span>Tailwind</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/bappi2097/twitter-clone"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Timeline</h3>
-                <img
-                  src="assets/img/tweety-timeline.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Edit Profile</h3>
-                <img
-                  src="assets/img/tweety-edit-profile.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="teach">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Teaching Hub</h2>
-              <p>
-                Teaching Hub is an application which will provide all Pdf books
-                and suggestions for all class. And some feature will added like
-                anyone can provide tutorial, can give their own suggestions and
-                can get private tutor from this site.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Mysql</span></li>
-                  <li><span>Bootstrap</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/bappi2097/TeachingHub-BD"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Home</h3>
-                <img
-                  src="assets/img/teachinghub-bd.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="websocket">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Websocket</h2>
-              <p>
-                I try to implement Laravel echo & Websocket using pusher. This
-                is a WebSocket learning project. To develop it, I follow the
-                DevMarketer tutorial. Here i apply websocket in comment section.
-                When anyone make a comment, it can see everyone without any
-                load.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Mysql</span></li>
-                  <li><span>Echo</span></li>
-                  <li><span>Websocket</span></li>
-                  <li><span>Pusher</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/bappi2097/laravel-websocket"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Home</h3>
-                <img src="assets/img/websocket.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="scrapper">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>Corona Web Scrapper</h2>
-              <p>
-                This is a simple API project where I use web scrapper for
-                collecting corona information from different website like
-                worldometers.info.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Mysql</span></li>
-                  <li><span>RestAPI</span></li>
-                  <li><span>Web Scrapper</span></li>
-                </ul>
-              </div>
-              <a
-                href="https://github.com/bappi2097/coronabdAPI"
-                class="btn btn-fill"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Data Source</h3>
-                <img
-                  src="assets/img/webscrapper.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Data Source</h3>
-                <img
-                  src="assets/img/webscrapper-data.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mh-portfolio-modal" id="exchanger">
-        <div class="container">
-          <div class="row mh-portfolio-modal-inner">
-            <div class="col-sm-5">
-              <h2>ExchangerBD</h2>
-              <p>
-                This project will help the freelancers to convert their
-                currency. Here a user can place order how much they want to
-                convert and admin can accept or reject the order. User can
-                provide feedback and edit their profile.
-              </p>
-              <div class="mh-about-tag">
-                <ul>
-                  <li><span>Php</span></li>
-                  <li><span>Html</span></li>
-                  <li><span>Css</span></li>
-                  <li><span>Laravel</span></li>
-                  <li><span>Mysql</span></li>
-                </ul>
-              </div>
-              <a
-                href="http://xchanger.herokuapp.com"
-                class="btn btn-fill"
-                target="_blank"
-                >Live Demo</a
-              >
-            </div>
-            <div class="col-sm-7">
-              <div class="mh-portfolio-modal-img">
-                <h3>Data Source</h3>
-                <img
-                  src="assets/img/exchanger-data.png"
-                  alt=""
-                  class="img-fluid"
-                />
-                <h3>Data Source</h3>
-                <img
-                  src="assets/img/exchanger-admin-user.png"
-                  alt=""
-                  class="img-fluid"
-                />
+  // reveal on scroll
+  var io = "IntersectionObserver" in window && new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in-view"); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  d.querySelectorAll(".rv").forEach(function (el) { io ? io.observe(el) : el.classList.add("in-view"); });
 
-                <h3>Data Source</h3>
-                <img
-                  src="assets/img/exchanger-admin-order.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  // active nav link
+  var links = d.querySelectorAll("nav ul a");
+  var so = "IntersectionObserver" in window && new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting) links.forEach(function (a) { a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id); });
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  if (so) d.querySelectorAll("section[id]").forEach(function (s) { so.observe(s); });
 
-    <!--
-        ===================
-           PRICING
-        ===================
-        -->
-    <!-- <section class="mh-pricing" id="mh-pricing">
-      <div class="">
-        <div class="container">
-          <div class="row section-separator">
-            <div
-              class="col-sm-12 section-title"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s"
-            >
-              <h3>Why Do You Hire Me?</h3>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div
-                class="mh-pricing dark-bg shadow-2 wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.3s"
-              >
-                <i class="fa fa-calendar"></i>
-                <h4>Full-time work</h4>
-                <p>I am available for full time</p>
-                <h5>$1500</h5>
-                <ul>
-                  <li>Web Development</li>
-                  <li>Advetising</li>
-                  <li>Game Development</li>
-                  <li>Music Writing</li>
-                </ul>
-                <a href="" class="btn btn-fill">Hire Me</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div
-                class="mh-pricing dark-bg shadow-2 wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.5s"
-              >
-                <i class="fa fa-file"></i>
-                <h4>Fixed Price Project</h4>
-                <p>I am available for fixed roles</p>
-                <h5>$500</h5>
-                <ul>
-                  <li>Web Development</li>
-                  <li>Advetising</li>
-                  <li>Game Development</li>
-                  <li>Music Writing</li>
-                </ul>
-                <a href="" class="btn btn-fill">Hire Me</a>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <div
-                class="mh-pricing dark-bg shadow-2 wow fadeInUp"
-                data-wow-duration="0.8s"
-                data-wow-delay="0.7s"
-              >
-                <i class="fa fa-hourglass"></i>
-                <h4>Hourley work</h4>
-                <p>I am available for Hourley projets</p>
-                <h5>$50</h5>
-                <ul>
-                  <li>Web Development</li>
-                  <li>Advetising</li>
-                  <li>Game Development</li>
-                  <li>Music Writing</li>
-                </ul>
-                <a href="" class="btn btn-fill">Hire Me</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+  // skill filter
+  var fbtns = d.querySelectorAll(".filters button"), tags = d.querySelectorAll("#tags li");
+  fbtns.forEach(function (b) {
+    b.onclick = function () {
+      var f = b.dataset.f;
+      fbtns.forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+      tags.forEach(function (t) { t.classList.toggle("off", f !== "all" && t.dataset.g !== f); });
+    };
+  });
 
-    <!--
-        ===================
-           BLOG
-        ===================
-        -->
-    <!-- <section class="mh-blog" id="mh-blog">
-      <div class="container">
-        <div class="row section-separator">
-          <div
-            class="col-sm-12 section-title wow fadeInUp"
-            data-wow-duration="0.8s"
-            data-wow-delay="0.2s"
-          >
-            <h3>Featured Posts</h3>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div
-              class="mh-blog-item dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <img src="assets/images/b-3.png" alt="" class="img-fluid" />
-              <div class="blog-inner">
-                <h2>
-                  <a href="blog-single.html"
-                    >A life without the daily traffic jams</a
-                  >
-                </h2>
-                <div class="mh-blog-post-info">
-                  <ul>
-                    <li><strong>Post On</strong><a href="">24.11.19</a></li>
-                    <li><strong>By</strong><a href="">ThemeSpiders</a></li>
-                  </ul>
-                </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout
-                </p>
-                <a href="blog-single.html">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div
-              class="mh-blog-item dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-            >
-              <img src="assets/images/b-2.png" alt="" class="img-fluid" />
-              <div class="blog-inner">
-                <h2>
-                  <a href="blog-single.html"
-                    >Proportion are what’s really needed</a
-                  >
-                </h2>
-                <div class="mh-blog-post-info">
-                  <ul>
-                    <li><strong>Post On</strong><a href="">24.11.19</a></li>
-                    <li><strong>By</strong><a href="">ThemeSpiders</a></li>
-                  </ul>
-                </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout
-                </p>
-                <a href="blog-single.html">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div
-              class="mh-blog-item dark-bg wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.7s"
-            >
-              <img src="assets/images/b-1.png" alt="" class="img-fluid" />
-              <div class="blog-inner">
-                <h2>
-                  <a href="blog-single.html"
-                    >Mounts of paper work to remember the way</a
-                  >
-                </h2>
-                <div class="mh-blog-post-info">
-                  <ul>
-                    <li><strong>Post On</strong><a href="">24.11.19</a></li>
-                    <li><strong>By</strong><a href="">ThemeSpiders</a></li>
-                  </ul>
-                </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout
-                </p>
-                <a href="blog-single.html">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+  // copy email
+  var cp = d.getElementById("copy");
+  cp.onclick = function () {
+    (navigator.clipboard ? navigator.clipboard.writeText(EMAIL) : Promise.reject()).then(
+      function () { cp.textContent = "copied ✓"; setTimeout(function () { cp.textContent = "copy email"; }, 1500); },
+      function () { location.href = "mailto:" + EMAIL; });
+  };
 
-    <!-- Achivements -->
+  // terminal: output is fixed HTML below; what the visitor types is only ever set as text
+  var out = d.getElementById("out"), input = d.getElementById("cmd"), hist = [], hi = 0;
+  var C = {
+    help: '<span class="m">commands:</span>\n  <span class="f">about</span>       who I am\n  <span class="f">experience</span>  where I worked\n  <span class="f">skills</span>      what I use\n  <span class="f">contact</span>     how to reach me\n  <span class="f">github</span>      open my GitHub\n  <span class="f">linkedin</span>    open my LinkedIn\n  <span class="f">theme</span>       light / dark\n  <span class="f">clear</span>       clear the screen',
+    whoami: 'bappi — Senior Software Engineer @ Masharah Advisory',
+    about: 'Senior Software Engineer, 5+ years.\nBackend services, APIs and web apps.\nI care about systems that are <span class="s">scalable</span>, <span class="s">reliable</span> and <span class="s">easy to maintain</span>.\n<span class="m">→ type "skills" or "experience"</span>',
+    experience: '<span class="k">2025–now</span>  Senior Software Engineer · Masharah Advisory <span class="m">(remote)</span>\n<span class="k">2024–2025</span> Senior Software Engineer · BJIT\n<span class="k">2021–2024</span> Software Engineer · BJIT\n<span class="k">2021</span>      Software Engineer · The Tork\n<span class="k">2019–2020</span> Web Development Intern · LuminousLabs',
+    skills: '<span class="f">backend</span>  Go, Gin, Node.js, NestJS, Laravel, PHP, Python, Odoo\n<span class="f">frontend</span> TypeScript, React, Next.js, Redux, Vue.js, Tailwind\n<span class="f">data</span>     PostgreSQL, Redis, RabbitMQ, MySQL, MongoDB\n<span class="f">devops</span>   Docker, GitHub Actions, Google Cloud, Linux',
+    contact: 'email    <a href="mailto:' + EMAIL + '">' + EMAIL + '</a>\nphone    <a href="tel:+8801983298393">+880 1983 298393</a>\ngithub   <a href="https://github.com/bappi2097">github.com/bappi2097</a>\nlinkedin <a href="https://www.linkedin.com/in/bappi-saha/">linkedin.com/in/bappi-saha</a>',
+    ls: 'about  experience  skills  contact',
+    pwd: '/home/bappi',
+    date: function () { return new Date().toString(); },
+    sudo: '<span class="k">permission denied:</span> nice try 🙂',
+    go: '<span class="s">go: my favourite tool</span>',
+    github: function () { open("https://github.com/bappi2097", "_blank", "noopener"); return "opening GitHub…"; },
+    linkedin: function () { open("https://www.linkedin.com/in/bappi-saha/", "_blank", "noopener"); return "opening LinkedIn…"; },
+    theme: function () { setTheme(root.dataset.theme === "dark" ? "light" : "dark"); return "theme: " + root.dataset.theme; },
+    email: function () { location.href = "mailto:" + EMAIL; return "opening mail…"; }
+  };
+  C.cat = C.about; C["?"] = C.help;
 
-    <section class="mh-testimonial" id="mh-testimonial">
-      <div class="home-v-img">
-        <div class="container">
-          <div class="row section-separator">
-            <div
-              class="col-sm-12 section-title wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s"
-            >
-              <h3>Achivements</h3>
-            </div>
-            <div
-              class="col-sm-12 wow fadeInUp"
-              id="mh-achivement"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a href="assets/img/certificate/ACM-2.jpg" data-fancybox>
-                    <img
-                      src="assets/img/certificate/ACM-2.jpg"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <h4>Intra Dept. Programming Contest</h4>
-                  <b>2nd Runners Up</b> <br />
-                  <span>Daffodil International University</span>
-                </div>
-              </div>
+  function line(html, cmd) {
+    var p = d.createElement("div");
+    if (cmd !== undefined) { p.innerHTML = '<span class="p">❯</span> '; p.appendChild(d.createTextNode(cmd)); }
+    else p.innerHTML = html;
+    out.appendChild(p); out.scrollTop = out.scrollHeight;
+  }
+  function run(raw) {
+    var cmd = raw.trim(), key = cmd.toLowerCase().split(/\s+/)[0];
+    if (!cmd) return;
+    hist.push(cmd); hi = hist.length;
+    line(null, cmd);
+    if (key === "clear" || key === "cls") { out.textContent = ""; return; }
+    var r = C[key];
+    if (r === undefined) {
+      var p = d.createElement("div"); p.className = "m";
+      p.textContent = "command not found: " + key.slice(0, 40) + ' — try "help"';
+      out.appendChild(p); out.scrollTop = out.scrollHeight; return;
+    }
+    line(typeof r === "function" ? r() : r);
+  }
+  d.getElementById("form").onsubmit = function (e) { e.preventDefault(); run(input.value); input.value = ""; };
+  input.onkeydown = function (e) {
+    if (e.key === "ArrowUp" && hi > 0) { input.value = hist[--hi]; e.preventDefault(); }
+    else if (e.key === "ArrowDown") { hi = Math.min(hist.length, hi + 1); input.value = hist[hi] || ""; e.preventDefault(); }
+    else if (e.key === "Tab") {
+      var m = Object.keys(C).filter(function (k) { return k.indexOf(input.value.toLowerCase()) === 0; });
+      if (input.value && m.length === 1) { input.value = m[0]; e.preventDefault(); }
+    }
+  };
+  d.querySelectorAll(".chips button").forEach(function (b) { b.onclick = function () { run(b.dataset.c); input.focus({ preventScroll: true }); }; });
+  d.getElementById("terminal").addEventListener("click", function (e) { if (e.target === out || e.target.closest(".bar")) input.focus({ preventScroll: true }); });
+  addEventListener("keydown", function (e) {
+    if (e.key === "/" && d.activeElement !== input) { e.preventDefault(); input.focus(); }
+  });
 
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a
-                    href="assets/img/certificate/project-fair.jpg"
-                    data-fancybox
-                  >
-                    <img
-                      src="assets/img/certificate/project-fair.jpg"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>Semester Project Fair, 2019</h4>
-                  <b>1st Runners Up</b> <br />
-                  <span>Daffodil International University</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a href="assets/img/certificate/icpc.jpg" data-fancybox>
-                    <img
-                      src="assets/img/certificate/icpc.jpg"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>ICPC Asia Dhaka Regional, 2019</h4>
-                  <span>Daffodil International University</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a href="assets/img/certificate/result.jpg" data-fancybox>
-                    <img
-                      src="assets/img/certificate/result.jpg"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>Outstanding Academic Performance, 2019</h4>
-                  <span>Daffodil International University</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a href="assets/img/certificate/Web Design.png" data-fancybox>
-                    <img
-                      src="assets/img/certificate/Web Design.png"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>HTML5, CSS3, Bootstrap 4 For Web Development</h4>
-                  <span>Bohubrihi</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a href="assets/img/certificate/wordpress.png" data-fancybox>
-                    <img
-                      src="assets/img/certificate/wordpress.png"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>Wordpress For Begineers</h4>
-                  <span>Bohubrihi</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <a
-                    href="assets/img/certificate/woocommerce.png"
-                    data-fancybox
-                  >
-                    <img
-                      src="assets/img/certificate/woocommerce.png"
-                      alt=""
-                      style="width: 275px; border: none; border-radius: 0"
-                    />
-                  </a>
-                  <!-- <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p> -->
-                  <h4>E-Commerce Website with Woocommerce</h4>
-                  <span>Bohubrihi</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--
-        ===================
-           TESTIMONIALS
-        ===================
-        -->
-    <!-- <section class="mh-testimonial" id="mh-testimonial">
-      <div class="home-v-img">
-        <div class="container">
-          <div class="row section-separator">
-            <div
-              class="col-sm-12 section-title wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s"
-            >
-              <h3>Achivements</h3>
-            </div>
-            <div
-              class="col-sm-12 wow fadeInUp"
-              id="mh-client-review"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-
-              <div class="each-client-item">
-                <div class="mh-client-item dark-bg black-shadow-1">
-                  <img src="assets/images/c-1.png" alt="" class="img-fluid" />
-                  <p>
-                    Absolute wonderful ! I am completely blown away.The very
-                    best.I was amazed at the quality
-                  </p>
-                  <h4>John Mike</h4>
-                  <span>CEO, Author.Inc</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!--
-        ===================
-           FOOTER 1
-        ===================
-        -->
-    <footer class="mh-footer" id="mh-contact">
-      <div class="map-image image-bg">
-        <div class="container">
-          <div class="row section-separator">
-            <div
-              class="col-sm-12 section-title wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.2s"
-            >
-              <h3>Contact Me</h3>
-            </div>
-            <div class="col-sm-12 mh-footer-address">
-              <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <div
-                    class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.3s"
-                  >
-                    <div class="each-icon">
-                      <i class="fa fa-location-arrow"></i>
-                    </div>
-                    <div class="each-info">
-                      <h4>Address</h4>
-                      <address>
-                        33/4, Shyamoli, Dhaka-1207 <br />
-                        Banngladesh
-                      </address>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                  <div
-                    class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.5s"
-                  >
-                    <div class="each-icon">
-                      <i class="fa fa-envelope-o"></i>
-                    </div>
-                    <div class="each-info">
-                      <h4>Email</h4>
-                      <a href="mailto:bappi35-2097@diu.edu.bd"
-                        >bappi35-2097@diu.edu.bd</a
-                      ><br />
-                      <a href="mailto:bappisahammj@gmail.com"
-                        >bappisahammj@gmail.com</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                  <div
-                    class="mh-address-footer-item dark-bg shadow-1 wow fadeInUp"
-                    data-wow-duration="0.8s"
-                    data-wow-delay="0.7s"
-                  >
-                    <div class="each-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <div class="each-info">
-                      <h4>Phone</h4>
-                      <a href="callto:(880)-198-329-8393">(880)-198-329-8393</a
-                      ><br />
-                      <a href="callto:(880)-172-625-7333">(880)-172-625-7333</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-sm-12 col-md-6 wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <form
-                action="mailto:bappi35-2097@diu.edu.bd?subject=From Portfolio | <subject>"
-                method="GET"
-                class="single-form quate-form wow fadeInUp"
-              >
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <input
-                      name="first_name"
-                      class="contact-name form-control"
-                      id="name"
-                      type="text"
-                      placeholder="First Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                    <input
-                      name="last_name"
-                      class="contact-email form-control"
-                      id="L_name"
-                      type="text"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <input
-                      name="email"
-                      class="contact-subject form-control"
-                      id="email"
-                      type="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-                  <div class="col-sm-12">
-                    <textarea
-                      class="contact-message"
-                      id="message"
-                      rows="6"
-                      placeholder="Your Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <!-- Subject Button -->
-                  <div class="btn-form col-sm-12">
-                    <button
-                      type="submit"
-                      class="btn btn-fill btn-block"
-                      id="form-submit"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div
-              class="col-sm-12 col-md-6 wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.5s"
-            >
-              <div class="mh-map">
-                <div id="mh-map" class="shadow-1"></div>
-              </div>
-            </div>
-            <div
-              class="col-sm-12 mh-copyright wow fadeInUp"
-              data-wow-duration="0.8s"
-              data-wow-delay="0.3s"
-            >
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="text-left text-xs-center">
-                    <p>All right reserved Siful Islam @ 2018</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!--
-    ==============
-    * JS Files *
-    ==============
-    -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <!-- jQuery -->
-    <script src="assets/plugins/js/jquery.min.js"></script>
-    <!-- popper -->
-    <script src="assets/plugins/js/popper.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/js/bootstrap.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/plugins/js/owl.carousel.js"></script>
-    <!-- validator -->
-    <!-- <script src="assets/plugins/js/validator.min.js"></script> -->
-    <!-- wow -->
-    <script src="assets/plugins/js/wow.min.js"></script>
-    <!-- mixin js-->
-    <script src="assets/plugins/js/jquery.mixitup.min.js"></script>
-    <!-- circle progress-->
-    <script src="assets/plugins/js/circle-progress.js"></script>
-    <!-- jquery nav -->
-    <script src="assets/plugins/js/jquery.nav.js"></script>
-    <!-- Fancybox js-->
-    <script src="assets/plugins/js/jquery.fancybox.min.js"></script>
-    <!-- isotope js-->
-    <script src="assets/plugins/js/isotope.pkgd.js"></script>
-    <script src="assets/plugins/js/packery-mode.pkgd.js"></script>
-    <!-- Map api -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script> -->
-    <!-- <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBeXpyQfqNmbqmQ10Ika2Dnm6SuCzjw0yk"></script> -->
-    <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeXpyQfqNmbqmQ10Ika2Dnm6SuCzjw0yk&callback=initMap"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp@key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
-    <!-- Custom Scripts-->
-    <script src="assets/js/map-init.js"></script>
-    <!-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeXpyQfqNmbqmQ10Ika2Dnm6SuCzjw0yk&callback=initMap" ></script> -->
-    <script src="assets/js/custom-scripts.js"></script>
-  </body>
+  line('<span class="m">This terminal works. Type a command, or press</span> <span class="f">/</span> <span class="m">to focus.</span>');
+  line(null, "help"); line(C.help);
+})();
+</script>
+</body>
 </html>
