@@ -10,6 +10,8 @@
 <meta property="og:description" content="Backend systems in Go, PostgreSQL and Redis. Microservices, APIs and event-driven architecture.">
 <meta property="og:url" content="https://bappi2097.github.io/">
 <meta property="og:type" content="profile">
+<meta property="og:image" content="https://bappi2097.github.io/img/bappi-saha-og.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://bappi2097.github.io/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1117'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%2339d353'%3E%3E_%3C/text%3E%3C/svg%3E">
 <script>
@@ -48,6 +50,12 @@ h1{font-size:clamp(36px,6vw,58px);line-height:1.1;margin:0 0 12px;letter-spacing
 .role .typed{color:var(--fg)}
 .caret{display:inline-block;width:.6em;height:1.1em;vertical-align:-.15em;background:var(--acc);animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
+.hero{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.photo{position:relative;width:240px;height:240px;margin:0}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:24px;border:1px solid var(--line);display:block;transition:transform .3s}
+.photo::before{content:"";position:absolute;inset:-8px;border-radius:30px;border:1px dashed var(--acc);opacity:.6;transition:transform .3s}
+.photo:hover img{transform:translate(-4px,-4px)}.photo:hover::before{transform:translate(4px,4px)}
+.photo figcaption{position:absolute;left:12px;bottom:-14px;font:12px var(--mono);background:var(--bg2);border:1px solid var(--line);color:var(--acc);padding:3px 10px;border-radius:20px}
 .lead{max-width:640px;color:var(--mute);margin:0 0 26px}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 .btn{font:14px var(--mono);padding:10px 16px;border-radius:8px;border:1px solid var(--line);color:var(--fg);background:var(--bg2)}
@@ -119,6 +127,7 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font:13px var(--mono
 
 .js .rv{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
 .js .rv.in-view{opacity:1;transform:none}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:28px}.photo{order:-1;width:150px;height:150px}.photo::before{inset:-6px;border-radius:28px}}
 @media (max-width:640px){nav ul{display:none}#theme{margin-left:auto}.bar span{display:none}header{padding-top:44px}#out{height:220px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style>
@@ -143,6 +152,8 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font:13px var(--mono
 <main id="main">
 <header id="top">
   <div class="wrap">
+  <div class="hero">
+  <div>
     <p class="hello">$ whoami</p>
     <h1>Bappi Saha</h1>
     <p class="role" aria-label="Senior Software Engineer. Backend, Go, distributed systems."><span class="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span></p>
@@ -157,6 +168,12 @@ footer{padding:28px 0 40px;border-top:1px solid var(--line);font:13px var(--mono
       <span><span class="dot"></span>Senior Software Engineer @ Masharah Advisory</span>
       <span>📍 Jeddah, Saudi Arabia · remote</span>
     </div>
+  </div>
+    <figure class="photo">
+      <img src="img/bappi-saha.webp" width="240" height="240" alt="Photo of Bappi Saha" fetchpriority="high" decoding="async">
+      <figcaption>~/bappi.webp</figcaption>
+    </figure>
+  </div>
 
     <div class="term" id="terminal">
       <div class="bar"><i></i><i></i><i></i><span>bappi@portfolio: ~</span></div>
